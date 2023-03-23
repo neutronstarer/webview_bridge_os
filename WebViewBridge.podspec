@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/neutronstarer/webview_bridge_os.git", :tag => "#{spec.version}" }
 
-
+  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -90,8 +90,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "WebViewBridge/*.h,WebViewBridge/*.swift"
+  spec.swift_version = "5.0"
+  spec.source_files  = "WebViewBridge/*.{h,swift}"
   # spec.exclude_files = "Refreshment/Refreshment.h", "Refreshment/RefreshmentView.h", "Refreshment/UIScrollView+Refreshment.h"
 
   spec.public_header_files = "WebViewBridge/WebViewBridge.h"
@@ -118,7 +118,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "UIKit", "WebKit"
+  spec.ios.frameworks = "UIKit", "WebKit"
+  spec.macos.frameworks = "WebKit"
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 

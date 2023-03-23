@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9D19E929CC6A4F00000611 /* NPC in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D19E829CC6A4F00000611 /* NPC */; };
 		CEDF975B29C1E40000B2AD14 /* WebViewBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDF974D29C1E40000B2AD14 /* WebViewBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEDF976629C1E4C000B2AD14 /* NPC in Frameworks */ = {isa = PBXBuildFile; productRef = CEDF976529C1E4C000B2AD14 /* NPC */; };
 		CEDF976A29C1E92C00B2AD14 /* WebViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF976929C1E92C00B2AD14 /* WebViewBridge.swift */; };
@@ -95,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9D19E929CC6A4F00000611 /* NPC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +233,9 @@
 			dependencies = (
 			);
 			name = "WebViewBridge macOS";
+			packageProductDependencies = (
+				CE9D19E829CC6A4F00000611 /* NPC */,
+			);
 			productName = "WebViewBridge macOS";
 			productReference = CEDF977629C1F8CE00B2AD14 /* WebViewBridge.framework */;
 			productType = "com.apple.product-type.framework";
@@ -745,6 +750,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE9D19E829CC6A4F00000611 /* NPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDF976429C1E4C000B2AD14 /* XCRemoteSwiftPackageReference "npc_swift" */;
+			productName = NPC;
+		};
 		CEDF976529C1E4C000B2AD14 /* NPC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEDF976429C1E4C000B2AD14 /* XCRemoteSwiftPackageReference "npc_swift" */;
