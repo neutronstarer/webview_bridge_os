@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "npc_swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/neutronstarer/npc_swift.git",
+      "state" : {
+        "revision" : "13ec583d813e0d8fc5949ccb824d0a5c2fec8a37",
+        "version" : "4.7.5"
+      }
+    }
+  ],
+  "version" : 2
+}
