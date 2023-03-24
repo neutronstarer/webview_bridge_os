@@ -31,8 +31,8 @@ extension WebView: InnerBridgeWebView {
             }
         }
     }
-    func initializeBridge() {
-        
+    func initializeWith(bridge: WebViewBridge)->Void {
+
     }
 }
 #endif

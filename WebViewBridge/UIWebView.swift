@@ -33,8 +33,8 @@ extension UIWebView: InnerBridgeWebView {
             return
         }
     }
-    func initializeBridge() {
-        
+    func initializeWith(bridge: WebViewBridge)->Void {
+
     }
 }
 

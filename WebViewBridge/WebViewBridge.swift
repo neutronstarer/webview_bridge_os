@@ -64,7 +64,7 @@ public class WebViewBridge: NSObject {
         self.namespace = namespace
         self.webView = webView
         super.init()
-        webView.initializeBridge()
+        webView.initializeWith(bridge: self)
     }
     
     func load(){

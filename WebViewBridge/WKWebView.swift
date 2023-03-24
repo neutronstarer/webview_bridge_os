@@ -9,7 +9,7 @@
 import WebKit
 
 extension WKWebView: InnerBridgeWebView {
-    
+
     @objc
     public override func bridge(of namespace: String) -> WebViewBridge {
         return super.bridge(of: namespace)
@@ -33,7 +33,8 @@ extension WKWebView: InnerBridgeWebView {
             }
         }
     }
-    func initializeBridge() {
+    
+    func initializeWith(bridge: WebViewBridge)->Void {
         configuration.userContentController.removeScriptMessageHandler(forName: "webviewbridge")
         configuration.userContentController.add(WebViewBridgeMessageHandler.shared, name: "webviewbridge")
     }

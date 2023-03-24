@@ -23,7 +23,7 @@ public protocol BridgeWebView {
 
 protocol InnerBridgeWebView: BridgeWebView {
     func evaluate(js: String, completion: ((Any?) -> Void)?)
-    func initializeBridge()->Void
+    func initializeWith(bridge: WebViewBridge)->Void
 }
 
 extension NSObject {
