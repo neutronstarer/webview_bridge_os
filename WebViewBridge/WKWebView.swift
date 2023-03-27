@@ -35,8 +35,8 @@ extension WKWebView: InnerBridgeWebView {
     }
     
     func initializeWith(bridge: WebViewBridge)->Void {
-        configuration.userContentController.removeScriptMessageHandler(forName: "webviewbridge")
-        configuration.userContentController.add(WebViewBridgeMessageHandler.shared, name: "webviewbridge")
+        configuration.userContentController.removeScriptMessageHandler(forName: "com.neutronstarer.webviewbridge")
+        configuration.userContentController.add(WebViewBridgeMessageHandler.shared, name: "com.neutronstarer.webviewbridge")
     }
 }
 
